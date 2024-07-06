@@ -32,25 +32,27 @@
 <p>
     <a href="@Url.Action("GenerarPdf", "Usuario")" class="btn btn-secondary">Generar PDF</a>
 </p>
+
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.CodUs)
+            Codigo
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NomUs)
+            Usuario
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CtrUs)
+            Contraseña
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.IdTpu)
+            Tipo(N°)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.EstUs)
+            Estado
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CorUs)
+            Correo
         </th>
         <th></th>
     </tr>
@@ -78,7 +80,7 @@
             </td>
             <td>
                 @Html.ActionLink("Modificar", "EditUsuario", new { id = item.CodUs }, new { @class = "btn btn-success btn-sm" }) |
-                @Html.ActionLink("Detalles", "DetalleUsuario", new { id = item.CodUs },new { @class = "btn btn-warning btn-sm" }) |
+                @Html.ActionLink("Detalles", "DetalleUsuario", new { id = item.CodUs }, new { @class = "btn btn-warning btn-sm" }) |
                 @Html.ActionLink("Eliminar", "DeleteUsuario", new { id = item.CodUs }, new { @class = "btn btn-danger btn-sm" })
             </td>
         </tr>
